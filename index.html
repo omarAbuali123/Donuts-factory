@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .hero {
+          background-image: url('hero-bg.jpg');
+          background-size: cover;
+          background-position: center;
+          color: #fff;
+          text-align: center;
+          padding: 100px 0;
+        }
+        
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+        
+        .donut {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        
+        .donut img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+        
+        .donut-info {
+          flex: 1;
+          padding: 0 20px;
+        }
+        
+        .donut h2 {
+          font-size: 24px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+        
+        .donut p {
+          margin-bottom: 10px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+          .container {
+            padding: 10px;
+          }
+          .donut {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .donut img {
+            margin-bottom: 10px;
+          }
+        }
+        </style>
+</head>
+<body>
+
+  
+<div class="hero">
+    <h1>Welcome to Our Donut Shop</h1>
+    <p>Explore our delicious donut selection</p>
+  </div>
+  
+  <div class="container">
+    <div class="donut">
+      <img src="donut1.jpg" alt="Donut 1">
+      <div class="donut-info">
+        <h2>Chocolate Donut</h2>
+        <p>A delicious chocolate donut with sprinkles.</p>
+      </div>
+    </div>
+  
+    <div class="donut">
+      <img src="donut2.jpg" alt="Donut 2">
+      <div class="donut-info">
+        <h2>Glazed Donut</h2>
+        <p>A classic glazed donut for a sweet treat.</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
