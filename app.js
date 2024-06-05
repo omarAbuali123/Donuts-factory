@@ -2,18 +2,21 @@
 
 // let gender = prompt ("Enter your gender");
 
-// while(gender != "male" && gender != "female"){
-//     prompt ("Enter your gender");
+function Type(){
+let gender=prompt ("Enter your gender").toLowerCase();
+while(gender != "male" && gender != "female"){
+    gender=prompt("Enter your gender");
 
-// }
+}
 
-// if (gender == "male"){
-//     alert("Welcome sir " + name);
-// }
-// else if (gender == "female"){
-//     alert("welcome mrs " + name);
-// }
-
+if (gender == "male"){
+    alert("Welcome sir " + name);
+}
+else if (gender == "female"){
+    alert("welcome mrs " + name);
+}
+}
+Type();
 
 // let order = prompt ("Dount or Coffee or Ice cream or Bakery");
 // let ordername = prompt (" Snow Dount or Mocha or vanilla or Bakery");
