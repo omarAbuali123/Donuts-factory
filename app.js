@@ -1,6 +1,6 @@
-// let name = prompt ("Enter your name");
+let name = prompt ("Enter your name");
 
-// let gender = prompt ("Enter your gender");
+let gender = prompt ("Enter your gender");
 
 function Type(){
 let gender=prompt ("Enter your gender").toLowerCase();
@@ -18,16 +18,16 @@ else if (gender == "female"){
 }
 Type();
 
-// let order = prompt ("Dount or Coffee or Ice cream or Bakery");
-// let ordername = prompt (" Snow Dount or Mocha or vanilla or Bakery");
-// alert ("their order is getting prepared");
-// console.log(name + order);
+let order = prompt ("Dount or Coffee or Ice cream or Bakery");
+let ordername = prompt (" enter your order");
+alert ("their order is getting prepared");
+console.log(name + order);
 
-// let myArray = [name, gender, order, ordername]
+let myArray = [name, gender, order, ordername]
 
-// for(let i = 0; i< myArray.length; i++){
-//     console.log(myArray[i]);
-// }
+for(let i = 0; i< myArray.length; i++){
+    console.log(myArray[i]);
+}
 
 /*q1 */
 
@@ -160,3 +160,32 @@ Type();
 //     sum = sum + i;
 // }
 // alert(sum)
+/////////////////////////////////////////////////////////////ex4
+
+const section = document.querySelector("section");
+const newdiv = document.createElement("div");
+newdiv.style.backgroundColor= "red";
+newdiv.style.height="300px";
+const paragraphElement = document.createElement("p");
+const listElement = document.createElement("ul");
+
+const liname = document.createElement("li");
+liname.textContent = "my name is : " + name ;
+const ligender = document.createElement("li");
+ligender.textContent = "my gender is : " + gender ;
+
+const liorder = document.createElement("li");
+liorder.textContent = "my order is : " + order ;
+
+const liordername = document.createElement("li");
+liordername.textContent = "my ordername is : " + ordername ;
+
+
+document.body.insertBefore(newdiv, section);
+newdiv.appendChild(paragraphElement);
+paragraphElement.appendChild(listElement);
+listElement.appendChild(liname);
+listElement.appendChild(ligender);
+listElement.appendChild(liorder);
+listElement.appendChild(liordername);
+
