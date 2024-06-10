@@ -1,33 +1,33 @@
-let name = prompt ("Enter your name");
+// let name = prompt ("Enter your name");
 
-let gender = prompt ("Enter your gender");
+// let gender = prompt ("Enter your gender");
 
-function Type(){
-let gender=prompt ("Enter your gender").toLowerCase();
-while(gender != "male" && gender != "female"){
-    gender=prompt("Enter your gender");
+// function Type(){
+// let gender=prompt ("Enter your gender").toLowerCase();
+// while(gender != "male" && gender != "female"){
+//     gender=prompt("Enter your gender");
 
-}
+// }
 
-if (gender == "male"){
-    alert("Welcome sir " + name);
-}
-else if (gender == "female"){
-    alert("welcome mrs " + name);
-}
-}
-Type();
+// if (gender == "male"){
+//     alert("Welcome sir " + name);
+// }
+// else if (gender == "female"){
+//     alert("welcome mrs " + name);
+// }
+// }
+// Type();
 
-let order = prompt ("Dount or Coffee or Ice cream or Bakery");
-let ordername = prompt (" enter your order");
-alert ("their order is getting prepared");
-console.log(name + order);
+// let order = prompt ("Dount or Coffee or Ice cream or Bakery");
+// let ordername = prompt (" enter your order");
+// alert ("their order is getting prepared");
+// console.log(name + order);
 
-let myArray = [name, gender, order, ordername]
+// let myArray = [name, gender, order, ordername]
 
-for(let i = 0; i< myArray.length; i++){
-    console.log(myArray[i]);
-}
+// for(let i = 0; i< myArray.length; i++){
+//     console.log(myArray[i]);
+// }
 
 /*q1 */
 
@@ -162,30 +162,45 @@ for(let i = 0; i< myArray.length; i++){
 // alert(sum)
 /////////////////////////////////////////////////////////////ex4
 
-const section = document.querySelector("section");
-const newdiv = document.createElement("div");
-newdiv.style.backgroundColor= "red";
-newdiv.style.height="300px";
-const paragraphElement = document.createElement("p");
-const listElement = document.createElement("ul");
+// const section = document.querySelector("section");
+// const newdiv = document.createElement("div");
+// newdiv.style.backgroundColor= "red";
+// newdiv.style.height="300px";
+// const paragraphElement = document.createElement("p");
+// const listElement = document.createElement("ul");
 
-const liname = document.createElement("li");
-liname.textContent = "my name is : " + name ;
-const ligender = document.createElement("li");
-ligender.textContent = "my gender is : " + gender ;
+// const liname = document.createElement("li");
+// liname.textContent = "my name is : " + name ;
+// const ligender = document.createElement("li");
+// ligender.textContent = "my gender is : " + gender ;
 
-const liorder = document.createElement("li");
-liorder.textContent = "my order is : " + order ;
+// const liorder = document.createElement("li");
+// liorder.textContent = "my order is : " + order ;
 
-const liordername = document.createElement("li");
-liordername.textContent = "my ordername is : " + ordername ;
+// const liordername = document.createElement("li");
+// liordername.textContent = "my ordername is : " + ordername ;
 
 
-document.body.insertBefore(newdiv, section);
-newdiv.appendChild(paragraphElement);
-paragraphElement.appendChild(listElement);
-listElement.appendChild(liname);
-listElement.appendChild(ligender);
-listElement.appendChild(liorder);
-listElement.appendChild(liordername);
+// document.body.insertBefore(newdiv, section);
+// newdiv.appendChild(paragraphElement);
+// paragraphElement.appendChild(listElement);
+// listElement.appendChild(liname);
+// listElement.appendChild(ligender);
+// listElement.appendChild(liorder);
+// listElement.appendChild(liordername);    
 
+
+let form = document.getElementById(2);
+let p = document.getElementById(9);
+
+function submit(event){
+    event.preventDefault();
+
+    let username = document.getElementById('3').value;
+    let age = document.getElementById("4").value;
+    let gender = document.getElementById("5").value;
+    let orderType = document.getElementById("6").value;
+    let drink = document.querySelector('input[name ="ho"]:checked').value;
+    p.innerHTML = "user name : " + username + "  your age is :  " + age + " gender is : " + gender + " orderType is : " + orderType + " drink is : " + drink;
+}
+form.addEventListener("submit", submit);
